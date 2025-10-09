@@ -113,22 +113,6 @@ td.done { background-color: #10b981; }
   }
 }
 
-/* Pulsanti */
-button {
-  padding: 0.5rem 1rem;
-  border: none;
-  background: #ef233c;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background: #d90429;
-  transform: scale(1.05);
-}
-
 /* Form AddTask */
 form {
   display: flex;
@@ -286,16 +270,11 @@ h1, h2 {
   padding: 0.7rem 1.5rem;
   border: none;
   border-radius: 12px;
-  color: #fff;
+  /* color: #fff; */
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-}
-
-.AddTask button:hover {
-  background: #d90429;
-  transform: scale(1.05);
 }
 
 /* Responsive: adattamento form su mobile */
