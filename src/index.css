@@ -288,3 +288,99 @@ h1, h2 {
   }
 }
 
+/* --- TaskDetails --- */
+.TaskDetails {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Titolo principale */
+.TaskDetails h1:first-of-type {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2b2d42;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  font-size: 1.8rem;
+}
+
+/* Nome della task */
+.TaskDetails h1 strong {
+  color: #ef233c;
+}
+
+/* Testo descrittivo */
+.TaskDetails p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Evidenzia etichette */
+.TaskDetails p strong {
+  color: #2b2d42;
+}
+
+/* Stato colorato */
+.TaskDetails p strong + span {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.TaskDetails .status-Todo { background-color: #f59e0b; }
+.TaskDetails .status-Doing { background-color: #3b82f6; }
+.TaskDetails .status-Done { background-color: #10b981; }
+
+/* Messaggio di errore (task non trovata) */
+.TaskDetails-empty {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.4rem;
+  color: #ef233c;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+  .TaskDetails {
+    padding: 1.5rem;
+  }
+  .TaskDetails h1:first-of-type {
+    font-size: 1.5rem;
+  }
+  .TaskDetails p {
+    font-size: 1rem;
+  }
+}
+
+/* --- Pulsante Elimina Task --- */
+.TaskDetails button {
+  margin-top: 2rem;
+  padding: 0.8rem 1.8rem;
+  background-color: #ef233c; /* rosso principale */
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(239, 35, 60, 0.3);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .TaskDetails button {
+    width: 100%;
+    text-align: center;
+  }
+}
