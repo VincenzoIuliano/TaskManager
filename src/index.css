@@ -384,3 +384,118 @@ h1, h2 {
     text-align: center;
   }
 }
+
+/* --- Modal Overlay --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+/* --- Modal Box --- */
+.modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+/* Titolo */
+.modal h2 {
+  color: #2b2d42;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Contenuto */
+.modal p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+/* --- Pulsanti --- */
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modal-buttons button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Bottone Chiudi */
+.modal-buttons button:first-of-type {
+  background: #ccc;
+  color: #333;
+}
+
+.modal-buttons button:first-of-type:hover {
+  background: #bbb;
+}
+
+/* Bottone Conferma (Elimina) */
+.modal-buttons button:last-of-type {
+  background: #ef233c;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(239, 35, 60, 0.3);
+}
+
+.modal-buttons button:last-of-type:hover {
+  background: #d90429;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(239, 35, 60, 0.4);
+}
+
+/* --- Animazioni --- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* --- Mobile friendly --- */
+@media (max-width: 500px) {
+  .modal {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .modal h2 {
+    font-size: 1.3rem;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+  }
+
+  .modal-buttons button {
+    width: 100%;
+  }
+}
