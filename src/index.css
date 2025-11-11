@@ -446,6 +446,10 @@ h1, h2 {
   transition: all 0.3s ease;
 }
 
+button {
+  margin: 1rem;
+}
+
 /* Bottone Chiudi */
 .modal-buttons button:first-of-type {
   background: #ccc;
