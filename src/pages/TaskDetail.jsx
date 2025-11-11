@@ -20,7 +20,7 @@ export default function TaskDetails() {
   const handleDelete = async () => {
     try {
       await removeTask(task.id);
-      alert("Task eliminata con successo!");
+      // alert("Task eliminata con successo!");
       navigate("/");
     } catch (error) {
       console.error("Error deleting task:", error);
