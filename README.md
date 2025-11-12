@@ -16,7 +16,7 @@ Un’applicazione web leggera per gestire le tasks, sviluppata in React con Cont
 - React + Context API
 - CSS modulare e animazioni leggere
 
-- Nota bene:
+## Nota bene
 Per far funzionare il progetto, è necessario avere un server locale che esponga le tasks tramite API REST.
 
 ## Installazione
