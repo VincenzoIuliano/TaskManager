@@ -473,6 +473,16 @@ button {
   box-shadow: 0 6px 14px rgba(239, 35, 60, 0.4);
 }
 
+th:hover {
+  background-color: #3b82f6;
+  transition: background-color 0.3s;
+}
+
+input {
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
 /* --- Animazioni --- */
 @keyframes fadeIn {
   from { opacity: 0; }
